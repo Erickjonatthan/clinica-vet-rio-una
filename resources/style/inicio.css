@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Alexandria';
+    src: url('../fonts/Alexandria/Alexandria-VariableFont_wght.ttf') format('truetype');
+}
+body {
+    font-family: 'Alexandria', sans-serif;
+}
+.header {
+    background-color: #F4FFFA;
+    color: white;
+    padding: 15px 0;
+}
+.header img.img-fluid {
+    max-width: 180px;
+    height: auto;
+}
+.header .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .contact-info div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header .contact-info div i {
+    margin-right: 10px;
+}
+.header .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.services {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    position: relative;
+    margin-bottom: 5%;
+}
+.services .service-item {
+    margin-bottom: 20px;
+}
+.services .service-item + div img {
+    margin-left: 10%; /* Adiciona margem à esquerda da imagem */
+}
+.footer {
+    background-color: #00a99d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.paw-cloud {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    width: 40%;
+    height: auto;
+}
+
+.text-blue {
+    color: #0B4062;
+}
+
+.custom-navbar {
+    background-color: #129796;
+    height: 80px;
+}
+.custom-navbar .nav-link {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase; /* Texto em maiúsculas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Centraliza verticalmente */
+    padding: 0 30px; /* Aumenta o espaçamento entre os itens */
+    font-size: 1.4rem; /* Aumenta o tamanho do texto */
+}
+.custom-navbar .nav-link:hover {
+    color: #e0f2f1;
+}
+.custom-navbar .dropdown-menu {
+    background-color: #129796;
+}
+.custom-navbar .dropdown-item {
+    color: white;
+}
+.custom-navbar .dropdown-item:hover {
+    background-color: #00796b;
+}
+.navbar-nav {
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+.navbar-nav .nav-item {
+    margin: 0 80px; /* Aumenta o espaçamento entre todos os itens */
+}
