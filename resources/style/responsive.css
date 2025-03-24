@@ -8,7 +8,7 @@
     .custom-navbar .navbar-brand {
         display: flex;
         align-items: center;
-        width: 45%;
+        width: 30%;
     }
     .header .contact-info {
         flex-direction: column;
