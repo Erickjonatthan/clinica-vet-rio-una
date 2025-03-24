@@ -1,4 +1,15 @@
 @media (max-width: 768px) {
+    .header {
+        display: none;
+    }
+    .custom-navbar {
+        background-color: #F4FFFA;
+    }
+    .custom-navbar .navbar-brand {
+        display: flex;
+        align-items: center;
+        width: 45%;
+    }
     .header .contact-info {
         flex-direction: column;
         text-align: center;
@@ -32,7 +43,7 @@
         font-size: 1.2rem; /* Aumenta o tamanho do texto */
         padding: 5px 0; /* Aumenta o espaçamento entre os itens */
     }
-    .services{
+    .services {
         margin-bottom: 15%;
     }
     .services .service-item + div img {
@@ -44,6 +55,22 @@
         right: 0;
         width: 70%;
         height: auto;
+        opacity: 0; /* Inicialmente invisível */
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transição suave */
+        transform: translateX(100%); /* Começa fora da tela à direita */
+    }
+
+    [data-aos="fade-left"] {
+        opacity: 1; /* Visível quando a animação é ativada */
+        transform: translateX(0); /* Move para a posição original */
+    }
+
+    .custom-offcanvas {
+        width: 60% !important; /* Define a largura do offcanvas para 50% */
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: none; /* Desativa o hover em dispositivos móveis */
     }
 }
 
@@ -56,12 +83,13 @@
     }
     .custom-navbar .nav-link {
         padding: 5px 0; /* Aumenta o espaçamento entre os itens */
+        font-size: 1.2rem; /* Aumenta o tamanho do texto */
     }
     .header img.img-fluid {
         max-width: 135px;
         height: auto;
     }
-    .paw-cloud{
+    .paw-cloud {
         bottom: -5px;
     }
 }
@@ -70,5 +98,8 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .paw-cloud {
         width: 40%; /* Ajuste o tamanho conforme necessário */
+    }
+    .custom-navbar .nav-link {
+        font-size: 1.2rem; /* Aumenta o tamanho do texto */
     }
 }

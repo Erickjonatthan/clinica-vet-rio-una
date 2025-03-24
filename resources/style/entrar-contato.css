@@ -1,0 +1,113 @@
+.entrar-contato {
+    background: url('../img/entrar-contato.png') no-repeat center center;
+    background-size: cover;
+    padding: 30px 0;
+    color: white;
+    position: relative;
+    min-height: 270px;
+}
+
+.entrar-contato .container {
+    position: relative;
+    height: 100%;
+}
+
+.entrar-contato .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.entrar-contato .col-md-6 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+}
+
+.entrar-contato .img-entrar-contato {
+    position: absolute;
+    right: -50px;
+    max-width: 65%;
+    height: auto;
+    bottom: -160px;
+}
+
+.entrar-contato h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.entrar-contato p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Responsividade para tablets e notebooks com telas menores */
+@media (max-width: 992px) and (min-width: 577px) {
+    .entrar-contato {
+        padding: 20px 0;
+        min-height: 200px;
+    }
+
+    .entrar-contato h2 {
+        font-size: 1.5rem;
+    }
+
+    .entrar-contato p {
+        font-size: 1rem;
+    }
+
+    .entrar-contato .img-entrar-contato {
+        max-width: 100%;
+        right: -100px;
+        bottom: -155px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 576px) {
+    .entrar-contato {
+        padding-bottom: 0;
+        min-height: 150px;
+    }
+
+    .entrar-contato .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .entrar-contato .col-md-6 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .entrar-contato .img-entrar-contato {
+        position: static;
+        max-width: 80%;
+        margin-top: 20px;
+        bottom: auto;
+    }
+}
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.btn-whatsapp .icon-whatsapp {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}

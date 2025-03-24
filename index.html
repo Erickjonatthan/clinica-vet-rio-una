@@ -1,43 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clínica Veterinária Rio Una</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="./resources/style/inicio.css">
-    <link rel="stylesheet" href="./resources/style/responsive.css">
-</head>
-<body>
+    <link rel="icon" href="./resources/img/favicon-32x32.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./resources/style/inicio.css" />
+    <link rel="stylesheet" href="./resources/style/responsive.css" />
+    <link rel="stylesheet" href="./resources/style/entrar-contato.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="row contact-info">
-                <div class="col-md-2">
-                    <img src="./resources/img/logo.png" alt="Logo" class="img-fluid">
-                </div>
-                <div class="col-md-3 text-center">
-                    <img src="./resources/img/location_on.png" alt="Localização" class="icon">
-                    <p class="text-blue"><strong>R. Dr. Marcos Braga Filho</strong><br>Centro, São Bento do Una, PE, 55370-000</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <img src="./resources/img/phone-call.png" alt="Telefone" class="icon">
-                    <p class="text-blue"><strong>Fale conosco:</strong><br>(12) 34567-8910</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <img src="./resources/img/whatsapp.png" alt="Whatsapp" class="icon">
-                    <p class="text-blue"><strong>Mande uma mensagem:</strong><br>(12) 98765-4321</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row contact-info">
+          <div class="col-md-2">
+            <img src="./resources/img/logo.png" alt="Logo" class="img-fluid" />
+          </div>
+          <div class="col-md-3 text-center">
+            <img
+              src="./resources/img/location_on.png"
+              alt="Localização"
+              class="icon"
+            />
+            <p class="text-blue">
+              <strong>R. Dr. Marcos Braga Filho</strong><br />Centro, São Bento
+              do Una, PE, 55370-000
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <img
+              src="./resources/img/phone-call.png"
+              alt="Telefone"
+              class="icon"
+            />
+            <p class="text-blue">
+              <strong>Fale conosco:</strong><br />(12) 34567-8910
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <img
+              src="./resources/img/whatsapp.png"
+              alt="Whatsapp"
+              class="icon"
+            />
+            <p class="text-blue">
+              <strong>Mande uma mensagem:</strong><br />(12) 98765-4321
+            </p>
+          </div>
         </div>
+      </div>
     </header>
 
     <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./resources/img/logo.png" alt="Logo" class="img-fluid" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start custom-offcanvas"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -45,16 +103,25 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Sobre</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Serviços
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Serviço 1</a></li>
                   <li><a class="dropdown-item" href="#">Serviço 2</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item" href="#">Outro serviço</a></li>
                 </ul>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#">Serviços</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contato</a>
@@ -62,29 +129,85 @@
             </ul>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <section class="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 service-item">
-                    <h2>Clínica Veterinária Rio Una</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="./resources/img/clinica.png" alt="Clínica" class="img-fluid">
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 service-item">
+            <h2>
+              Clínica Veterinária <span class="clinica-title rio">Rio</span>
+              <span class="clinica-title una">Una</span>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./resources/img/clinica.png"
+              alt="Clínica"
+              class="img-fluid"
+            />
+          </div>
         </div>
-        <img src="./resources/img/paw-cloud.svg" alt="Nuvem com Patinhas" class="paw-cloud">
+      </div>
+      <img
+        src="./resources/img/paw-cloud.png"
+        alt="Nuvem com Patinhas"
+        class="paw-cloud"
+        data-aos="fade-left"
+      />
     </section>
 
-    <section class="footer">
-        <div class="container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <section class="entrar-contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Agende sua visita</h2>
+            <p>
+              Solicite uma consulta em casa agora mesmo! Atendemos de domingo à
+              domingo até às 22h, após esse horário somente para clientes
+              cadastrados. Agende pelo telefone, WhatsApp ou em nosso site.
+            </p>
+            <a href="https://wa.me/5512987654321" class="btn btn-whatsapp">
+              <img src="./resources/img/whatsapp.png" alt="WhatsApp" class="icon-whatsapp" />
+              Chamar no WhatsApp
+            </a>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./resources/img/entrar-contato-p.png"
+              alt="Pessoa Entrar em Contato"
+              class="img-fluid img-entrar-contato"
+            />
+          </div>
         </div>
+      </div>
     </section>
+
+    <a href="https://wa.me/5512987654321" class="fixed-whatsapp"></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var offcanvas = document.getElementById("offcanvasNavbar");
+        offcanvas.addEventListener("show.bs.offcanvas", function () {
+          document.body.classList.add("no-scroll");
+          document.documentElement.classList.add("no-scroll");
+        });
+        offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+          document.body.classList.remove("no-scroll");
+          document.documentElement.classList.remove("no-scroll");
+        });
+      });
+    </script>
+  </body>
 </html>
